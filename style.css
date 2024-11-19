@@ -101,7 +101,7 @@ body {
   color: #d3d3d3;
   line-height: 1.5;
 }
-[angled]:is(:hover) {
+[angled]:not([start], [end]):is(:hover) {
   --grad-color: #a0c4ff;
 }
 
