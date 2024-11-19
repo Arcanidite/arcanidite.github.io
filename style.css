@@ -94,19 +94,60 @@ body {
   color: #d3d3d3;
   line-height: 1.5;
 }
-.c2a > a:hover {
-  box-shadow: inset 0 0 1.6rem -0.8rem rgba(255, 255, 255, 0.5),
-    0 0 0.6rem -0.1rem rgba(245, 245, 245, 0.5);
+[angled]:has(a:hover) {
+  --grad-color: #a0c4ff;
 }
+
 .content a {
-  display: inline-block;
-  margin: 0.625rem 0; /* 10px equivalent */
-  padding: 0.625rem 1.25rem; /* 10px 20px equivalent */
-  background-color: #4a90e2;
   border-radius: 3rem;
+  display: inline-block;
+  margin: 0.4rem 2rem 0.4rem 1.5rem; /* 10px equivalent */
+  padding: 0.25rem 1rem; /* 10px 20px equivalent */
   color: #fff;
   text-decoration: none;
   border-radius: 0.3125rem; /* 5px equivalent */
+}
+
+.c2a {
+  --grad-color: #274090;
+}
+
+[angled] {
+  width: min-content;
+  padding: 0rem 0.6rem;
+  border-radius: unset;
+  background: linear-gradient(
+    -60deg,
+    #00000000 calc(1.2rem),
+    var(--grad-color) calc(1.2rem),
+    var(--grad-color) calc(1.2rem),
+    var(--grad-color) calc(100%),
+    #00000000 calc(100%)
+  );
+}
+
+[angled] ~ [angled] {
+  border-radius: unset;
+  background: linear-gradient(
+    -60deg,
+    #ebebeb00 calc(1.2rem),
+    var(--grad-color) calc(1.2rem),
+    var(--grad-color) calc(1.2rem),
+    var(--grad-color) calc(100% - 1.2rem),
+    #00000000 calc(100% - 1.2rem)
+  );
+}
+
+.c2a > *:last-child {
+  border-radius: unset;
+  background: linear-gradient(
+    -60deg,
+    #ebebeb00 calc(-1.2rem),
+    var(--grad-color) calc(-1.2rem),
+    var(--grad-color) calc(1.2rem),
+    var(--grad-color) calc(100% - 1.2rem),
+    #00000000 calc(100% - 1.2rem)
+  );
 }
 
 .card a:hover {
@@ -155,6 +196,17 @@ body {
 }
 
 @media (max-width: 600px) {
+  [angled] {
+    border-radius: unset;
+    background: linear-gradient(
+      90deg,
+      #00000000 calc(1.2rem),
+      var(--grad-color) calc(1.2rem),
+      var(--grad-color) calc(1.2rem),
+      var(--grad-color) calc(100% - 1.2rem),
+      #00000000 calc(100% - 1.2rem)
+    ) !important;
+  }
   .hero h1 {
     font-size: 1.75rem; /* 28px equivalent */
   }
