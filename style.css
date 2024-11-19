@@ -102,7 +102,7 @@ body {
   line-height: 1.5;
 }
 [angled]:not([start], [end]):is(:hover) {
-  --grad-color: #a0c4ff;
+  --grad-color: #5d77a0;
 }
 
 .content a {
@@ -116,7 +116,7 @@ body {
 
 .c2a {
   --angle: 1.6rem;
-  --grad-color: #274090;
+  --grad-color: #203f6a;
 }
 
 [angled] {
