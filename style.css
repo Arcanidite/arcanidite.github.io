@@ -8,10 +8,13 @@ body {
 
 .nav {
   background-color: #333;
-  padding: 1rem; /* 16px equivalent */
+  padding: 1rem;
+  position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  top: 0rem;
+  z-index: 1;
 }
 
 .nav > .links {
@@ -115,6 +118,7 @@ body {
 }
 
 .c2a {
+  place-content: space-between;
   --angle: 1.6rem;
   --grad-color: #203f6a;
 }
