@@ -123,8 +123,9 @@ body {
   --grad-color: #203f6a;
 }
 
-.c2a *:focus {
+.c2a *:focus-visible {
   z-index: 1;
+  outline-offset: -0.625rem;
 }
 
 [angled] {
