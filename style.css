@@ -123,6 +123,10 @@ body {
   --grad-color: #203f6a;
 }
 
+.c2a *:focus {
+  z-index: 1;
+}
+
 [angled] {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.421);
   width: min-content;
