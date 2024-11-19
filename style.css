@@ -14,11 +14,18 @@ body {
   align-items: center;
 }
 
+.nav > .links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 3rem;
+}
+
 .nav a {
   color: #fff;
   text-decoration: none;
   border-bottom: 0.125rem solid #00000000;
-  margin: 0 1rem; /* 16px equivalent */
+  /* 16px equivalent */
 }
 
 .nav a.brand {
@@ -199,11 +206,11 @@ body {
     border-radius: unset;
     background: linear-gradient(
       90deg,
-      #00000000 calc(1.2rem),
-      var(--grad-color) calc(1.2rem),
-      var(--grad-color) calc(1.2rem),
-      var(--grad-color) calc(100% - 1.2rem),
-      #00000000 calc(100% - 1.2rem)
+      #00000000 calc(0.3rem),
+      var(--grad-color) calc(0.3rem),
+      var(--grad-color) calc(0.3rem),
+      var(--grad-color) calc(100% - 0.3rem),
+      #00000000 calc(100% - 0.3rem)
     ) !important;
   }
   .hero h1 {
