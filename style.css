@@ -8,20 +8,24 @@ body {
 
 .nav {
   background-color: #333;
-  padding: 1rem;
   position: sticky;
   display: flex;
   justify-content: space-between;
   align-items: center;
   top: 0rem;
   z-index: 1;
+  padding: 0.5rem 1rem;
 }
 
 .nav > .links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem 3rem;
+  gap: 1rem;
+}
+
+.nav > .links > a {
+  padding: 0.2rem 2rem;
 }
 
 .nav a {
@@ -125,7 +129,7 @@ body {
 
 .c2a *:focus-visible {
   z-index: 1;
-  outline-offset: -0.625rem;
+  outline-offset: -0.3rem;
 }
 
 [angled] {
