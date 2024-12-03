@@ -63,17 +63,6 @@ body > * {
   /* margin: 0rem calc(var(--percent-offset) * 12% * -1); */
 }
 
-.item3 {
-  --start-y: 300px;
-  --start-x: 430px;
-  --end-y: 410px;
-  --end-x: 450px;
-  /* animation: pan 17s infinite cubic-bezier(0.25, 0.1, 0.25, 1); */
-  animation: pan 13s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
-
-  background: url("/resource/game/professions/tanning_tub_anim.png");
-}
-
 @property --percent-offset {
   syntax: "<number>";
   inherits: false;
@@ -130,6 +119,17 @@ body > * {
   --end-x: 730px;
   animation: pan 10s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
   background: url("/resource/game/flantium_location2.png") top left;
+}
+
+.item3 {
+  --start-y: 300px;
+  --start-x: 430px;
+  --end-y: 410px;
+  --end-x: 450px;
+  /* animation: pan 17s infinite cubic-bezier(0.25, 0.1, 0.25, 1); */
+  animation: pan 13s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  background: url("/resource/game/professions/tanning_tub_anim.png");
 }
 .item4 {
   --start-y: 27rem;
