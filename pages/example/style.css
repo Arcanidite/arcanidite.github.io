@@ -110,7 +110,7 @@ body > * {
   --end-x: 520px;
   /* animation: pan 17s infinite cubic-bezier(0.25, 0.1, 0.25, 1); */
   animation: pan 17s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
-  background: url("resource/game/flantium_location2.png") top left;
+  background: url("/bloglet/resource/game/flantium_location2.png") top left;
 }
 .item2 {
   --start-y: 10rem;
@@ -118,7 +118,7 @@ body > * {
   --end-y: 16rem;
   --end-x: 730px;
   animation: pan 10s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
-  background: url("resource/game/flantium_location2.png") top left;
+  background: url("/bloglet/resource/game/flantium_location2.png") top left;
 }
 
 .item3 {
@@ -129,7 +129,7 @@ body > * {
   /* animation: pan 17s infinite cubic-bezier(0.25, 0.1, 0.25, 1); */
   animation: pan 13s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
 
-  background: url("resource/game/professions/tanning_tub_anim.png");
+  background: url("/bloglet/resource/game/professions/tanning_tub_anim.png");
 }
 .item4 {
   --start-y: 27rem;
@@ -137,5 +137,5 @@ body > * {
   --end-y: 31rem;
   --end-x: 1180px;
   animation: pan 17s infinite cubic-bezier(0.25, 0.1, 0.25, 1);
-  background: url("resource/game/smithing2.png") top left;
+  background: url("/bloglet/resource/game/smithing2.png") top left;
 }
